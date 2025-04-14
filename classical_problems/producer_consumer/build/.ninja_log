@@ -1,9 +1,0 @@
-# ninja log v5
-1	24	1744670022500513651	CMakeFiles/run_pc.dir/run_pc.c.o	d9673b64257c912d
-1	28	1744669689762473101	CMakeFiles/pc.dir/pc.c.o	92528b48bcc1ac14
-28	61	1744669689785470773	libpc.a	8cf254ca6a9f01e4
-24	52	1744670022529513407	run_pc	b62a248b374d7be9
-68	95	1744670514239832748	run_producer_consumer	b53b9df3ed400f32
-0	38	1744670514182831544	CMakeFiles/run_producer_consumer.dir/run_producer_consumer.c.o	1093affcc8724d34
-0	41	1744670514186831628	CMakeFiles/producer_consumer.dir/producer_consumer.c.o	bf4d9ce6dee3b97f
-41	68	1744670514204832009	libproducer_consumer.a	68e968ddcd8e6548

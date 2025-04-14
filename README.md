@@ -6,7 +6,7 @@ Puzzles I've solved from Allen B. Downey's Little Book of Semaphores
 The puzzles are contained in folders organized by difficulty rating, following the organization of the textbook. Each puzzle has its own labelled folder containing a C solution and a language-agnostic solution. In the future, I'd like to also add Python solutions.
 
 To run the C solution yourself, enter the puzzle folder and run the following on your command line:
-`./build/run_<name_of_puzzle_directory>.c`
+`.run_<name_of_puzzle_directory>`
 
 ## Classical Synchronization Problems (1/5)
 
