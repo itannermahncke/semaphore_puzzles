@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Producer_Consumer
+# Project: producer_consumer
 # Configurations: Debug
 # =============================================================================
 
@@ -41,75 +41,69 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/build/
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target pc
+# Object build statements for STATIC_LIBRARY target producer_consumer
 
 
 #############################################
-# Order-only phony target for pc
+# Order-only phony target for producer_consumer
 
-build cmake_object_order_depends_target_pc: phony || CMakeFiles/pc.dir
+build cmake_object_order_depends_target_producer_consumer: phony || CMakeFiles/producer_consumer.dir
 
-build CMakeFiles/pc.dir/pc.c.o: C_COMPILER__pc_Debug /home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/src/pc.c || cmake_object_order_depends_target_pc
-  DEP_FILE = CMakeFiles/pc.dir/pc.c.o.d
+build CMakeFiles/producer_consumer.dir/producer_consumer.c.o: C_COMPILER__producer_consumer_Debug /home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/src/producer_consumer.c || cmake_object_order_depends_target_producer_consumer
+  DEP_FILE = CMakeFiles/producer_consumer.dir/producer_consumer.c.o.d
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/pc.dir
-  OBJECT_FILE_DIR = CMakeFiles/pc.dir
-  TARGET_COMPILE_PDB = CMakeFiles/pc.dir/pc.pdb
-  TARGET_PDB = libpc.pdb
+  OBJECT_DIR = CMakeFiles/producer_consumer.dir
+  OBJECT_FILE_DIR = CMakeFiles/producer_consumer.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target pc
+# Link build statements for STATIC_LIBRARY target producer_consumer
 
 
 #############################################
-# Link the static library libpc.a
+# Link the static library libproducer_consumer.a
 
-build libpc.a: C_STATIC_LIBRARY_LINKER__pc_Debug CMakeFiles/pc.dir/pc.c.o
+build libproducer_consumer.a: C_STATIC_LIBRARY_LINKER__producer_consumer_Debug CMakeFiles/producer_consumer.dir/producer_consumer.c.o
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles/pc.dir
+  OBJECT_DIR = CMakeFiles/producer_consumer.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/pc.dir/pc.pdb
-  TARGET_FILE = libpc.a
-  TARGET_PDB = libpc.pdb
+  TARGET_FILE = libproducer_consumer.a
+  TARGET_PDB = producer_consumer.a.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target run_pc
+# Object build statements for EXECUTABLE target run_producer_consumer
 
 
 #############################################
-# Order-only phony target for run_pc
+# Order-only phony target for run_producer_consumer
 
-build cmake_object_order_depends_target_run_pc: phony || cmake_object_order_depends_target_pc
+build cmake_object_order_depends_target_run_producer_consumer: phony || cmake_object_order_depends_target_producer_consumer
 
-build CMakeFiles/run_pc.dir/run_pc.c.o: C_COMPILER__run_pc_Debug /home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/src/run_pc.c || cmake_object_order_depends_target_run_pc
-  DEP_FILE = CMakeFiles/run_pc.dir/run_pc.c.o.d
+build CMakeFiles/run_producer_consumer.dir/run_producer_consumer.c.o: C_COMPILER__run_producer_consumer_Debug /home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/src/run_producer_consumer.c || cmake_object_order_depends_target_run_producer_consumer
+  DEP_FILE = CMakeFiles/run_producer_consumer.dir/run_producer_consumer.c.o.d
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/run_pc.dir
-  OBJECT_FILE_DIR = CMakeFiles/run_pc.dir
-  TARGET_COMPILE_PDB = CMakeFiles/run_pc.dir/
-  TARGET_PDB = run_pc.pdb
+  OBJECT_DIR = CMakeFiles/run_producer_consumer.dir
+  OBJECT_FILE_DIR = CMakeFiles/run_producer_consumer.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target run_pc
+# Link build statements for EXECUTABLE target run_producer_consumer
 
 
 #############################################
-# Link the executable run_pc
+# Link the executable run_producer_consumer
 
-build run_pc: C_EXECUTABLE_LINKER__run_pc_Debug CMakeFiles/run_pc.dir/run_pc.c.o | libpc.a || libpc.a
+build run_producer_consumer: C_EXECUTABLE_LINKER__run_producer_consumer_Debug CMakeFiles/run_producer_consumer.dir/run_producer_consumer.c.o | libproducer_consumer.a || libproducer_consumer.a
   FLAGS = -g
   LINK_FLAGS = -rdynamic
-  LINK_LIBRARIES = libpc.a  -lpthread
+  LINK_LIBRARIES = libproducer_consumer.a  -lpthread
   LINK_PATH = -L/home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/build
-  OBJECT_DIR = CMakeFiles/run_pc.dir
+  OBJECT_DIR = CMakeFiles/run_producer_consumer.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/run_pc.dir/
-  TARGET_FILE = run_pc
-  TARGET_PDB = run_pc.pdb
+  TARGET_FILE = run_producer_consumer
+  TARGET_PDB = run_producer_consumer.dbg
 
 
 #############################################
@@ -137,7 +131,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build pc: phony libpc.a
+build producer_consumer: phony libproducer_consumer.a
 
 # =============================================================================
 # Folder targets.
@@ -147,7 +141,7 @@ build pc: phony libpc.a
 #############################################
 # Folder: /home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/build
 
-build all: phony libpc.a run_pc
+build all: phony libproducer_consumer.a run_producer_consumer
 
 # =============================================================================
 # Unknown Build Time Dependencies.
@@ -161,14 +155,14 @@ build all: phony libpc.a run_pc
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/src/CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake-3.22/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-FindBinUtils.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/src/CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/src/CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake-3.22/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-FindBinUtils.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
+build /home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/src/CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
 
 
 #############################################

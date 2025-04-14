@@ -1,7 +1,7 @@
-project(Producer_Consumer)
+project(producer_consumer)
 
-add_library(pc pc.c pc.h)
-target_link_libraries(pc PRIVATE pthread)
+add_library(producer_consumer producer_consumer.c producer_consumer.h)
+target_link_libraries(producer_consumer PRIVATE pthread)
 
-add_executable(run_pc run_pc.c)
-target_link_libraries(run_pc PRIVATE pc pthread)
+add_executable(run_producer_consumer run_producer_consumer.c)
+target_link_libraries(run_producer_consumer PRIVATE producer_consumer pthread)

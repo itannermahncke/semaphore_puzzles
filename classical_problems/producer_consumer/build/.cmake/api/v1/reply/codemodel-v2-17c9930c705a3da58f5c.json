@@ -24,7 +24,7 @@
 					[
 						0
 					],
-					"name" : "Producer_Consumer",
+					"name" : "producer_consumer",
 					"targetIndexes" : 
 					[
 						0,
@@ -36,16 +36,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "pc::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-pc-Debug-a32188bfd528a9db24de.json",
-					"name" : "pc",
+					"id" : "producer_consumer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-producer_consumer-Debug-208c3935cc495ffde969.json",
+					"name" : "producer_consumer",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "run_pc::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-run_pc-Debug-d0c1acedc7507721aaa9.json",
-					"name" : "run_pc",
+					"id" : "run_producer_consumer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run_producer_consumer-Debug-3f01b403eac92dc64693.json",
+					"name" : "run_producer_consumer",
 					"projectIndex" : 0
 				}
 			]

@@ -1,4 +1,4 @@
-#include "pc.h"
+#include "producer_consumer.h"
 #include <pthread.h>
 #include <semaphore.h>
 

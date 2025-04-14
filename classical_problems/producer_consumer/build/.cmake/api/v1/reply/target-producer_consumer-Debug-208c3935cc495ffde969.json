@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "libpc.a"
+			"path" : "libproducer_consumer.a"
 		}
 	],
 	"backtrace" : 1,
@@ -46,9 +46,9 @@
 			]
 		}
 	],
-	"id" : "pc::@6890427a1f51a3e7e1df",
-	"name" : "pc",
-	"nameOnDisk" : "libpc.a",
+	"id" : "producer_consumer::@6890427a1f51a3e7e1df",
+	"name" : "producer_consumer",
+	"nameOnDisk" : "libproducer_consumer.a",
 	"paths" : 
 	{
 		"build" : ".",
@@ -76,12 +76,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "pc.c",
+			"path" : "producer_consumer.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "pc.h",
+			"path" : "producer_consumer.h",
 			"sourceGroupIndex" : 1
 		}
 	],

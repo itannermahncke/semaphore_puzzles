@@ -23,8 +23,8 @@ CMAKE_AR:FILEPATH=/usr/bin/llvm-ar-14
 //No help, variable specified on the command line.
 CMAKE_BUILD_TYPE:STRING=Debug
 
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=/usr/bin/clang++-14
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++-14
 
 //LLVM archiver
 CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/llvm-ar-14
@@ -47,8 +47,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:STRING=/usr/bin/clang-14
+//No help, variable specified on the command line.
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/clang-14
 
 //LLVM archiver
 CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/llvm-ar-14
@@ -137,7 +137,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Producer_Consumer
+CMAKE_PROJECT_NAME:STATIC=producer_consumer
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/llvm-ranlib-14
@@ -212,6 +212,18 @@ Producer_Consumer_SOURCE_DIR:STATIC=/home/ivymahncke/Documents/Github/semaphore_
 
 //Dependencies for the target
 pc_LIB_DEPENDS:STATIC=general;pthread;
+
+//Value Computed by CMake
+producer_consumer_BINARY_DIR:STATIC=/home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/build
+
+//Value Computed by CMake
+producer_consumer_IS_TOP_LEVEL:STATIC=ON
+
+//Dependencies for the target
+producer_consumer_LIB_DEPENDS:STATIC=general;pthread;
+
+//Value Computed by CMake
+producer_consumer_SOURCE_DIR:STATIC=/home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/src
 
 
 ########################

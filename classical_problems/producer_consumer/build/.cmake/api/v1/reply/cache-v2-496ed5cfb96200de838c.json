@@ -139,10 +139,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "/usr/bin/clang++-14"
 		},
 		{
@@ -267,10 +267,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "/usr/bin/clang-14"
 		},
 		{
@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Producer_Consumer"
+			"value" : "producer_consumer"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1148,6 +1148,54 @@
 			],
 			"type" : "STATIC",
 			"value" : "general;pthread;"
+		},
+		{
+			"name" : "producer_consumer_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/build"
+		},
+		{
+			"name" : "producer_consumer_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "producer_consumer_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;pthread;"
+		},
+		{
+			"name" : "producer_consumer_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/src"
 		}
 	],
 	"kind" : "cache",
