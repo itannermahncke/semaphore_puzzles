@@ -1,0 +1,4 @@
+/home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/build/CMakeFiles/pc.dir
+/home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/build/CMakeFiles/run_pc.dir
+/home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/build/CMakeFiles/edit_cache.dir
+/home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/build/CMakeFiles/rebuild_cache.dir

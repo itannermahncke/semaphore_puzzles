@@ -1,0 +1,65 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Producer_Consumer",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "pc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pc-Debug-a32188bfd528a9db24de.json",
+					"name" : "pc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "run_pc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run_pc-Debug-d0c1acedc7507721aaa9.json",
+					"name" : "run_pc",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/build",
+		"source" : "/home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/src"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

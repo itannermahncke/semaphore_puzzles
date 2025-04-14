@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/build",
+  "command": "/usr/bin/clang-14 -g -o CMakeFiles/pc.dir/pc.c.o -c /home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/src/pc.c",
+  "file": "/home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/src/pc.c"
+},
+{
+  "directory": "/home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/build",
+  "command": "/usr/bin/clang-14 -g -o CMakeFiles/run_pc.dir/run_pc.c.o -c /home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/src/run_pc.c",
+  "file": "/home/ivymahncke/Documents/Github/semaphore_puzzles/classical_problems/producer_consumer/src/run_pc.c"
+}
+]
